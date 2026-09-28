@@ -1,0 +1,79 @@
+# ==========================================================
+#  Personal Budget Tracker — .gitignore
+# ==========================================================
+
+# ------------------------------------------------------------
+#  NOTE ABOUT db.php
+# ------------------------------------------------------------
+#  db.php is deliberately NOT ignored in this repository.
+#
+#  In a REAL production project you would never commit a file
+#  containing database credentials. The correct setup there is:
+#
+#      1. Add  db.php  to .gitignore
+#      2. Commit  db.example.php  (a copy with placeholder values)
+#      3. Tell developers to run:  cp db.example.php db.php
+#         and fill in their own credentials locally
+#
+#  This is a student/demo project that must be runnable by the
+#  lecturer immediately after cloning, so the real credentials
+#  (XAMPP defaults: host=localhost, user=root, empty password)
+#  are committed on purpose. Treat this repository as public
+#  sample code, not a template for production deployments.
+# ------------------------------------------------------------
+
+# ---- IDE / editor folders ----
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+nbproject/
+
+# ---- Operating system junk files ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Log files ----
+*.log
+logs/
+error_log
+
+# ---- Local config files that may contain credentials ----
+# NOTE: db.php and db.example.php are intentionally NOT ignored.
+.env
+.env.*
+!.env.example
+config.local.php
+config.local.json
+secrets.php
+secrets.json
+*.local.php
+*.local.json
+credentials.json
+
+# ---- Runtime / session artefacts ----
+*.sqlite
+*.sqlite3
+*.db
+tmp/
+temp/
+uploads/
+
+# ---- OS / editor backups ----
+*~
+*.bak
+*.orig
+*.swp
+Thumbs.db
