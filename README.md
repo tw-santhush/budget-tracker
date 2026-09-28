@@ -2,6 +2,12 @@
 
 A simple, dependency-free web app for tracking income and expenses, setting monthly budget limits per category, and watching your savings rate grow.
 
+## Live demo
+
+**https://yourbudget.free.je/**
+
+Hosted on a free shared-hosting account. Create an account from the **Register** tab to try it — no setup needed.
+
 ## Features
 
 - **Login & register** — session-based authentication with `password_hash()` / `password_verify()`, per-user data isolation
